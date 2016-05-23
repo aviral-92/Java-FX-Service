@@ -4,38 +4,43 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Person {
 
-	private final SimpleStringProperty firstName;
-	private final SimpleStringProperty lastName;
-	private final SimpleStringProperty email;
+	private String firstName;
+	private String lastName;
+	private String email;
 
-	public Person(String fName, String lName, String email) {
-		this.firstName = new SimpleStringProperty(fName);
-		this.lastName = new SimpleStringProperty(lName);
-		this.email = new SimpleStringProperty(email);
+	public Person() {
+		super();
 	}
 
 	public String getFirstName() {
-		return firstName.get();
+		return firstName;
 	}
 
-	public void setFirstName(String fName) {
-		firstName.set(fName);
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
-		return lastName.get();
+		return lastName;
 	}
 
-	public void setLastName(String fName) {
-		lastName.set(fName);
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public Person(String firstName, String lastName, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
 	}
 
 	public String getEmail() {
-		return email.get();
+		return email;
 	}
 
-	public void setEmail(String fName) {
-		email.set(fName);
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }

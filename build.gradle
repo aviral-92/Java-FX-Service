@@ -17,6 +17,14 @@ dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
     // http://mvnrepository.com/artifact/com.zenjava/javafx-maven-plugin
 	compile group: 'com.zenjava', name: 'javafx-maven-plugin', version: '8.4.0'
+    // http://mvnrepository.com/artifact/org.springframework/spring-context
+	compile group: 'org.springframework', name: 'spring-context', version: '4.2.6.RELEASE'
+	// http://mvnrepository.com/artifact/org.springframework/spring-core
+	compile group: 'org.springframework', name: 'spring-core', version: '4.2.6.RELEASE'
+	// http://mvnrepository.com/artifact/mysql/mysql-connector-java
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.35'
+
+	
     
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
